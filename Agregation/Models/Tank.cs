@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Agregation.Enums;
 
 namespace Agregation.Models
 {
@@ -36,6 +37,11 @@ namespace Agregation.Models
         public override void Afficher()
         {
             Console.WriteLine($"Je suis un tank du type {Model}");
+        }
+
+        public override Enumerations RechercheTypeUnite()
+        {
+            return Enumerations.Tank;
         }
     }
 }

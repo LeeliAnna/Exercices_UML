@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Agregation.Enums;
 
 namespace Agregation.Models
 {
@@ -45,5 +46,6 @@ namespace Agregation.Models
         }
         public abstract void Attaquer();
         public abstract void Afficher();
+        public abstract Enumerations RechercheTypeUnite();
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Agregation.Enums;
 
 namespace Agregation.Models
 {
@@ -39,5 +40,9 @@ namespace Agregation.Models
             Console.WriteLine($"Je suis un sodat du type {Type}");
         }
 
+        public override Enumerations RechercheTypeUnite()
+        {
+            return Enumerations.Soldat;
+        }
     }
 }
